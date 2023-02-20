@@ -26,5 +26,5 @@ class BasePage:
         try:
             element = self.browser.find_element(how, what)
         except NoSuchElementException:
-            return 'Такого элемента нет на странице'
+            return f'Такого элемента: "{element}" нет на странице'
         return element
